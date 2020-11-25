@@ -34,16 +34,16 @@ Item {
 
     Component.onCompleted: {
         _isValidScreenGeometry = (
-                                    (s.width                                            ) &&
-                                    (s.height                                           ) &&
-                                    (s.x      < Screen.desktopAvailableWidth  - s.width ) &&
-                                    (s.y      < Screen.desktopAvailableHeight - s.height) &&
-                                    (s.width  < Screen.desktopAvailableWidth            ) &&
-                                    (s.height < Screen.desktopAvailableHeight           ) &&
-                                    (s.x      > 0                                       ) &&
-                                    (s.y      > 0                                       ) &&
-                                    (s.width  > 0                                       ) &&
-                                    (s.height > 0                                       )
+                                    (s.width                                               ) &&
+                                    (s.height                                              ) &&
+                                    (s.x      <=  Screen.desktopAvailableWidth  - s.width  ) &&
+                                    (s.y      <=  Screen.desktopAvailableHeight - s.height ) &&
+                                    (s.width  <=  Screen.desktopAvailableWidth             ) &&
+                                    (s.height <=  Screen.desktopAvailableHeigh             ) &&
+                                    (s.x      >= 0                                         ) &&
+                                    (s.y      >= 0                                         ) &&
+                                    (s.width  >  0                                         ) &&
+                                    (s.height >  0                                         )
                                  )
         if (_enabled && _isValidScreenGeometry) {
             window.x            = s.x
