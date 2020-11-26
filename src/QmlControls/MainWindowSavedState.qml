@@ -39,7 +39,7 @@ Item {
                                     (s.x      <=  Screen.desktopAvailableWidth  - s.width  ) &&
                                     (s.y      <=  Screen.desktopAvailableHeight - s.height ) &&
                                     (s.width  <=  Screen.desktopAvailableWidth             ) &&
-                                    (s.height <=  Screen.desktopAvailableHeigh             ) &&
+                                    (s.height <=  Screen.desktopAvailableHeight            ) &&
                                     (s.x      >= 0                                         ) &&
                                     (s.y      >= 0                                         ) &&
                                     (s.width  >  0                                         ) &&
